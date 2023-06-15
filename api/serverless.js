@@ -35,7 +35,7 @@ function readTxtRecords(domain) {
 
 server.get('/', async (request, reply) => {
   let txtRecords = readTxtRecords(process.env.TARGET_DOMAIN)
-  reply.send("hi")
+  reply.send(txtRecords)
 });
 
 // this is an event that could be dispatched by a custom event, 
