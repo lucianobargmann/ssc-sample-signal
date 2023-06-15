@@ -1,0 +1,17 @@
+{
+  "name": "@securityscorecard/experimental-signal-app",
+  "version": "1.0.1",
+  "description": "experimental signal app",
+  "main": "index.js",
+  "author": "Cristian Leyes <cleyes@securityscorecard.io>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./api/serverless.js"
+  },
+  "dependencies": {
+    "@securityscorecard/sdk": "^0.4.1",
+    "dotenv": "^16.1.4",
+    "fastify": "^3.20.1",
+    "fastify-static": "^4.2.3"
+  }
+}
