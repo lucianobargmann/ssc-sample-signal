@@ -28,7 +28,7 @@ async function readTxtRecords(domain) {
           out += `Record ${index + 1}: ` + record.join(', ');
           console.log(`Record ${index + 1}:`, record.join(', '))
         });
-        resolve(out);
+        resolve(records);
       }
     });
   });
