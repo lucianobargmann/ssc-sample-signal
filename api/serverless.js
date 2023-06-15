@@ -3,6 +3,8 @@ const fastify = require("fastify");
 const static = require("fastify-static");
 const extractSSCHeaders = require("../utils/sscHelpers");
 const { SSC } = require('@securityscorecard/sdk');
+const dns = require('dns');
+
 require('dotenv').config();
 
 const server = fastify({
@@ -13,7 +15,28 @@ const TOKEN = process.env.SSC_API_TOKEN;
 
 const ssc = SSC({ token: TOKEN, host: 'https://platform-api.securityscorecard.tech' });
 
-server.get('/', async (request, reply) => reply.send("hi"));
+function readTxtRecords(domain) {
+
+  return dns.resolveTxt(domain, (err, records) => {
+    if (err) {
+      console.error('Error retrieving DNS TXT records:', err);
+      return;
+    }
+  
+    console.log('DNS TXT records for', domain);
+    records.forEach((record, index) => {
+      console.log(`Record ${index + 1}:`, record.join(', '));
+    });
+
+    return records;
+  });
+}
+
+
+server.get('/', async (request, reply) => {
+  let txtRecords = readTxtRecords(process.env.TARGET_DOMAIN)
+  reply.send("hi")
+});
 
 // this is an event that could be dispatched by a custom event, 
 // for the sole purpose of the example, it will be propagated using a post event
