@@ -9,7 +9,7 @@ const server = fastify({
   logger: true,
 });
 
-const TOKEN = process.env.API_TOKEN;
+const TOKEN = process.env.SSC_API_TOKEN;
 
 const ssc = SSC({ token: TOKEN, host: 'https://platform-api.securityscorecard.tech' });
 
