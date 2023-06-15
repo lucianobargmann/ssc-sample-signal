@@ -1,0 +1,76 @@
+{
+    "entries": [
+        {
+            "key": "cloud_security",
+            "name": "Cloud Security",
+            "description": "Measures security of your cloud infrastructure",
+            "long_description": "Evaluation of the security of your cloud infrastructure. Note this does not impact your overall score and is not visible to anybody but the members of your organization."
+        },
+        {
+            "key": "internal_security",
+            "name": "Internal Security",
+            "description": "Measures security of your internal networks",
+            "long_description": "The Internal Security module surveys your internal network(s) via a combination of the same scanning SecurityScorecard does from the outside plus a wide variety of integrations you can configure dynamically to connect to your existing security products."
+        },
+        {
+            "key": "network_security",
+            "name": "Network Security",
+            "description": "Detecting insecure network settings",
+            "long_description": "The Network Security module checks public datasets for evidence of high risk or insecure open ports within the company network. Insecure ports can often be exploited to allow an attacker to circumvent the login process or obtain elevated access to the system. If misconfigured, the open port can act as the entry point between a hacker's workstation and your internal network"
+        },
+        {
+            "key": "dns_health",
+            "name": "DNS Health",
+            "description": "Detecting DNS insecure configurations and vulnerabilities",
+            "long_description": "This module measures the health and configuration of a company's DNS settings. It validates that no malicious events occurred in the passive DNS history of the company's network. It also helps validate that mail servers have proper protection in place to avoid spoofing. It also helps verify that DNS servers are configured correctly."
+        },
+        {
+            "key": "patching_cadence",
+            "name": "Patching Cadence",
+            "description": "Out of date company assets which may contain vulnerabilities or risks",
+            "long_description": "The Patching Cadence module analyzes how quickly a company reacts to vulnerabilities to measure patching practices. We look at the rate at which it takes a company to remediate and apply patches compared to peers."
+        },
+        {
+            "key": "endpoint_security",
+            "name": "Endpoint Security",
+            "description": "Detecting unprotected endpoints or entry points of user tools, such as desktops, laptops, mobile devices, and virtual desktops",
+            "long_description": "The Endpoint Security Module tracks identification points that are extracted from metadata related to the operating system, web browser, and related active plugins. The information gathered allows companies to identify outdated versions of these data points which can lead to client-side exploitation attacks."
+        },
+        {
+            "key": "ip_reputation",
+            "name": "IP Reputation",
+            "description": "Detecting suspicious activity, such as malware or spam, within your company network",
+            "long_description": "The IP Reputation and Malware Exposure module makes use of the SecurityScorecard sinkhole infrastructure as well as a blend of OSINT malware feeds, and third party threat intelligence data sharing partnerships. The SecurityScorecard sinkhole system ingests millions of malware signals from commandeered Command and Control (C2) infrastructures globally from all over the world. The incoming data is processed and attributed to corporate enterprises. The quantity and duration of malware infections are used as the determining factor for calculating is module the Malware Exposure Key Threat Indicator."
+        },
+        {
+            "key": "application_security",
+            "name": "Application Security",
+            "description": "Detecting common website application vulnerabilities",
+            "long_description": "The Web Application Vulnerability module uses incoming threat intelligence from known exploitable conditions identified via: whitehat CVE databases, blackhat exploit databases, and sensitive findings indexed by major search engines. The module ingests data from multiple public data sets, third party feeds, and an internal proprietary indexing and aggregation engine.\nThe score determines the likelihood of an upcoming web application breach, and checks for any existing defacement code. Presence of vulnerable applications, outdated versions, and active defacements are used to calculate the overall grade."
+        },
+        {
+            "key": "cubit_score",
+            "name": "Cubit Score",
+            "description": "Proprietary algorithms checking for implementation of common security best practices",
+            "long_description": "This proprietary module measures a variety of security issues that a company might have. For example, we check public threat intelligence databases for IP addresses that have been flagged. These misconfigurations may have high exploitability and could cause significant harm to the privacy of your data and infrastructure"
+        },
+        {
+            "key": "hacker_chatter",
+            "name": "Hacker Chatter",
+            "description": "Monitoring hacker sites for chatter about your company",
+            "long_description": "The SecurityScorecard Hacker Chatter module is an automated collection and aggregation system for the analysis of multiple streams of underground hacker chatter. Forums, IRC, social networks, and other public repositories of hacker community discussions are continuously monitored, collected and aggregated in order to locate mentions of business names and websites. The Hacker Chatter score is an informational indicator ranking that is ranked based on the quantity of indicators that appear within the collection sensors."
+        },
+        {
+            "key": "leaked_information",
+            "name": "Information Leak",
+            "description": "Potentially confidential company information which may have been inadvertently leaked",
+            "long_description": "This Information Leak module makes use of chatter monitoring and deep web monitoring capabilities to identify compromised credentials being circulated by hackers. These come in the form of bulk data breaches announced publicly as well as smaller breaches, and smaller exchanges between hackers"
+        },
+        {
+            "key": "social_engineering",
+            "name": "Social Engineering",
+            "description": "Measuring company awareness to a social engineering or phishing attack",
+            "long_description": "The SecurityScorecard Social Engineering Module is used to determine the potential susceptibility of an organization to a targeted social engineering attack. The Social Engineering module ingests data from social networks and public data breaches, and blends proprietary analysis methods. The Social Engineering Score is an informational indicator calculated based on the quantity of indicators that appear in SecurityScorecard collection sensors."
+        }
+    ]
+}

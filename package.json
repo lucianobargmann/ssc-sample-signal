@@ -3,10 +3,10 @@
   "version": "1.0.1",
   "description": "experimental signal app",
   "main": "index.js",
-  "author": "Cristian Leyes <cleyes@securityscorecard.io>",
+  "author": "Luciano Bargmann <luciano.bargmann@securityscorecard.io>",
   "license": "MIT",
   "scripts": {
-    "start": "node ./api/serverless.js"
+    "start": "node ~/kcode/ssc/experimental-signal-app/api/serverless.js"
   },
   "dependencies": {
     "@securityscorecard/sdk": "^0.4.1",

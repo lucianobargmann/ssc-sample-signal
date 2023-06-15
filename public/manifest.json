@@ -1,23 +1,23 @@
 {
-   "name": "Experimental Signal App",
-   "description": "experimental signal app",
-   "long_description": "app only for experimental purposes only",
-   "url": "https://signal-app-cristiandley.vercel.app/public/manifest.json",
+   "name": "DNS Text Records",
+   "description": "Lists TXT records in a domain",
+   "long_description": "Lists TXT records in a domain",
+   "url": "https://ssc-sample-signal.vercel.app/public/manifest.json",
    "homepage": "https://signal-app-cristiandley.vercel.app",
-   "developer": "cristiandley.com",
-   "logo_url": "https://avatars.githubusercontent.com/u/1873659?s=60&v=4",
+   "developer": "Luciano Bargmann",
+   "logo_url": "https://avatars.githubusercontent.com/u/10276983?s=200&v=4",
    "signals": [
     {
-      "id": "signal_app.sample_information",
-      "name": "Site Sample Information",
+      "id": "lbargmann.dns_txt_records",
+      "name": "TXT Record",
       "severity": "info",
       "factor": "sample_information",
-      "long_description": "this is a long description, describes the nature of this signal, how they get detected, etc.",
-      "recommendation": "how to remediate this signal (applies only if not positive)",
-      "sent_by": "cleyes@securityscorecard.io",
+      "long_description": "Lists all TXT records in a domain.",
+      "recommendation": "Remove unnecessary TXT entries in your DNS manager",
+      "sent_by": "luciano.bargmann@securityscorecard.io",
       "references": [
         {
-          "link": "https://signal-app-cristiandley.vercel.app/more-info/",
+          "link": "https://ssc-sample-signal.vercel.app/more-info/",
           "text": "Caption for this Link"
         }
       ]
